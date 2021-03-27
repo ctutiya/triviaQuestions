@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trivia Questions</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="mt-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="row my-3">
+                            <div class="col-12 text-center">
+                                <h1 class="mb-3">Trivia Questions!</h1>
+                                <h3>Please pick one category:</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div id="categories-container" class="mb-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="question-modal" tabindex="-1" aria-labelledby="modal-question" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><span id="modal-category">Category</span><br/><span id="modal-question">What is the question?</span></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="modal-answer-container" data-number="1">
+                            <p class="modal-answer-id bg-warning">A</p>
+                            <p class="modal-answer-text">Answer 1</p>
+                        </div>
+                        <div class="modal-answer-container" data-number="2">
+                            <p class="modal-answer-id bg-warning">B</p>
+                            <p class="modal-answer-text">Answer 2</p>
+                        </div>
+                        <div class="modal-answer-container" data-number="3">
+                            <p class="modal-answer-id bg-warning">C</p>
+                            <p class="modal-answer-text">Answer 3</p>
+                        </div>
+                        <div class="modal-answer-container" data-number="4">
+                            <p class="modal-answer-id bg-warning">D</p>
+                            <p class="modal-answer-text">Answer 4</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <p id="modal-result"></p>
+
+                        <div class="buttons-container">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button id="modal-next-question" type="button" class="btn btn-warning" disabled>Next question</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="js/date.format/date.format.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
